@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
-import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import Whatsapp from "@/components/Whatsapp";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
       <Header/>
         {children}
-        <FloatingWhatsApp phoneNumber="+923149884064" accountName="AH Fabrics"/>
+        <Whatsapp/>
         </body>
     </html>
   );
